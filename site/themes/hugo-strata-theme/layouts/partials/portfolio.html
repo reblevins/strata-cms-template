@@ -5,9 +5,11 @@
 		{{ range first 5 (where .Data.Pages "Section" "post") }}
 		<article class="6u 12u$(xsmall) work-item">
 			<a href="{{ .Permalink }}" class="image fit thumb">
-				<img src="{{ $.Site.BaseURL }}images/{{ .image }}" alt="" />
-				<h3>{{ .title | markdownify }}</h3>
-				<p>{{ .description | markdownify }}</p>
+				<img src="{{ .Params.image }}" alt="" />
+			</a>
+			<a href="{{ .Permalink }}">
+				<h3>{{ .Title | markdownify }}</h3>
+				<p>{{ .Description | markdownify }}</p>
 			</a>
 		</article>
 		{{ end }}
