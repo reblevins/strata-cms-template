@@ -1,10 +1,6 @@
 {{ "<!-- Header -->" | safeHTML }}
 <header id="header">
-	<a href="{{ .Site.BaseURL }}" class="logo-image">
-		<img class="avatar" src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" />
-		<img class="logo" src="{{ .Site.BaseURL }}images/lf_logo.png">
-	</a>
-
+	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="" /></a>
 	{{ with .Site.Params.sidebar.bio }}
 		<h1>{{ . | markdownify }}</h1>
 	{{ end }}
