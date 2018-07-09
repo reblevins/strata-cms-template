@@ -7,6 +7,8 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import sass from "gulp-sass";
+// import autoprefixer from "gulp-autoprefixer";
 
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
@@ -20,10 +22,22 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
+    .pipe(postcss([cssnext(), cssImport({from: "./site/themes/hugo-strata-theme/static/css/styles.css"})]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+ // Compile SCSS files to CSS
+gulp.task("scss", function () {
+    gulp.src("site/themes/hugo-strata-theme/static/css/*.scss")
+        .pipe(sass({
+            outputStyle : "compressed"
+        }))
+        // .pipe(autoprefixer({
+        //     browsers : ["last 20 versions"]
+        // }))
+        .pipe(gulp.dest("site/themes/hugo-strata-theme/static/css"))
+})
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -39,7 +53,7 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("server", ["hugo", "scss" , "css", "js"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -47,6 +61,7 @@ gulp.task("server", ["hugo", "css", "js"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./site/themes/hugo-strata-theme/static/css/**/*", ["scss"])
   gulp.watch("./site/**/*", ["hugo"]);
 });
 
