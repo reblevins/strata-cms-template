@@ -1,18 +1,19 @@
 ---
-label: Page
+label: Posts
 hide_body: false
 is_partial: false
 fields:
 - type: text
   name: title
   label: Title
-  config:
-    required: true
 - type: datetime
   name: date
   label: Date
+- type: textarea
+  name: description
+  label: Description
 - type: file
   name: image
   label: Image
 pages:
-- site/content/quotes.md
+- site/content/post/first.md
