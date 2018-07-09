@@ -11,8 +11,8 @@ paginate = 10
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
-	description = "Describe your website"
+	name = "lost+found"
+	description = "Not all who wander are lost..."
 
 	# Format dates with Go's time formatting
 	date_format = "2006-01-02"
@@ -25,8 +25,9 @@ paginate = 10
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
 		avatar = "avatar.jpg"
+		logo = "lf_logo.png"
 		# Use Markdown to format the string. This works nearly all over the theme
-		bio = "The rantings, musings<br> and ponderances<br> of Rodney Blevins,<br> a.k.a. TheDonkey"
+		bio = "welcome to lost+found"
 		# The icons will be shown if you enter your username
 		twitter = "spf13"
 		github = "spf13"
@@ -45,8 +46,8 @@ paginate = 10
 
 	[params.about]
 		hide  = false
-		title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
-		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
+		title = "Not all who wander are lost..."
+		content = "Some who are lost are actually found.<br>Some who are found are actually lost."
 
 
 	[params.portfolio]
@@ -92,13 +93,13 @@ paginate = 10
 			description = "Lorem ipsum dolor sit amet."
 
 	[params.recentposts]
-		hide  = false
+		hide  = true
 		title = "Recent blog posts"
 
 	[params.contact]
-		hide  = false
+		hide  = true
 		title = "Get In Touch"
-		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+		content = "Some who are lost<br>are actually found.<br>Some who are found<br>are actually lost."
 
 		address = [
 			"1234 Somewhere Rd.",

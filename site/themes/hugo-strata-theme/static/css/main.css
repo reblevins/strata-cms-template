@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+/*@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans');
+
 
 /*
 	Strata by HTML5 UP
@@ -1567,7 +1569,7 @@
 
 	body, input, select, textarea {
 		color: #a2a2a2;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Open Sans", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -1585,7 +1587,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #2eb2ff !important;
 			text-decoration: none;
 		}
 
@@ -1603,9 +1605,21 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: "Merriweather", sans-serif;
 		color: #787878;
 		font-weight: 400;
 		line-height: 1em;
+	}
+	.quote {
+		font-style: italic;
+		position: relative;
+		margin-bottom: 0.5em;
+	}
+	span.attribution {
+	    display: block;
+	    text-align: right;
+	    font-size: 0.5em;
+	    line-height: 1em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2077,15 +2091,15 @@
 				width: 100%;
 			}
 
-		.image.avatar {
+		.avatar-logo {
 			border-radius: 100%;
 		}
 
-			.image.avatar:before {
+			.avatar-logo:before {
 				display: none;
 			}
 
-			.image.avatar img {
+			.avatar-logo img {
 				border-radius: 100%;
 				width: 100%;
 			}
@@ -2463,11 +2477,11 @@
 
 	#header {
 		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-attachment: fixed;
+		background-image: url("../images/colorado-2228788_1280.jpg");
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2488,14 +2502,31 @@
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.5);
+			font-style: italic;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
 		}
 
-		#header .image.avatar {
+		a.avatar-logo {
+			position: relative;
+		}
+
+		#header .avatar, #header .logo {
 			margin: 0 0 1em 0;
 			width: 6.25em;
+		}
+
+		#header .logo {
+			transition: 0.4s all;
+		}
+		#header .logo:hover {
+			opacity: 0;
+		}
+
+		#header .avatar{
+			position: absolute;
+			z-index: -1;
 		}
 
 /* Footer */
