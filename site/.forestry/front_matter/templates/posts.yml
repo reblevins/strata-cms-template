@@ -16,4 +16,5 @@ fields:
   name: image
   label: Image
 pages:
+- site/content/lost-found.md
 - site/content/post/first.md
