@@ -6,15 +6,34 @@ fields:
 - type: text
   name: title
   label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+  config:
+    required: true
 - type: datetime
   name: date
   label: Date
+  config:
+    required: true
 - type: textarea
   name: description
   label: Description
 - type: file
   name: image
   label: Image
+- type: boolean
+  name: multipart
+  label: Multipart
+- type: number
+  name: part
+  label: Part
+  config:
+    min: '1'
+    step: '1'
+- type: tag_list
+  name: tags
+  label: Tags
 pages:
 - site/content/lost-found.md
 - site/content/post/let-s-talk-about-sin--baby.md
