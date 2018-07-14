@@ -10,7 +10,7 @@ fields:
   name: subtitle
   label: Subtitle
   config:
-    required: true
+    required: false
 - type: datetime
   name: date
   label: Date
