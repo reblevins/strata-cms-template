@@ -25,7 +25,7 @@ paginate = 10
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
 		avatar = "avatar.jpg"
-		logo = "lf_logo.png"
+		logo = "lostfound.png"
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "welcome to lost+found"
 		# The icons will be shown if you enter your username

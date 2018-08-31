@@ -86,11 +86,13 @@ a.image {
 .logo {
 	z-index: 1;
 	width: 42%;
-	transition: all 0.4s;
+	// transition: all 0.4s;
 	border: 7px solid white;
+	transition: all 0.4s cubic-bezier(0.22, 0.61, 0.42, 1.25);
 }
 .logo:hover {
-	opacity: 0;
+	// opacity: 0;
+	transform: rotate(180deg);
 }
 .avatar {
 	position: absolute;

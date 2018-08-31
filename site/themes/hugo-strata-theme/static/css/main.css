@@ -2522,10 +2522,13 @@
 		}
 
 		#header .logo {
-			transition: 0.4s all;
+			/*transition: 0.4s all;*/
+			transition: all 0.4s cubic-bezier(0.22, 0.61, 0.42, 1.25);
+			border: 4px solid white;
 		}
 		#header .logo:hover {
-			opacity: 0;
+			/*opacity: 0;*/
+			transform: rotate(180deg);
 		}
 
 		#header .avatar{
