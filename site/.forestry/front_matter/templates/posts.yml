@@ -35,6 +35,7 @@ fields:
   name: tags
   label: Tags
 pages:
-- site/content/lost-found.md
-- site/content/post/let-s-talk-about-sin--baby.md
+- site/content/post/In-the-beginning....md
 - site/content/post/first.md
+- site/content/post/let-s-talk-about-sin--baby.md
+- site/content/lost-found.md

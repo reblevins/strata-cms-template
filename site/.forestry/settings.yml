@@ -4,12 +4,16 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: site/content
+- type: directory
+  path: site/content
   label: Pages
   create: all
-- path: site/content/post
+  match: "*"
+- type: directory
+  path: site/content/post
   label: Post
   create: all
+  match: "**/*"
 upload_dir: site/static/images
 public_path: "/images"
 front_matter_path: ''
