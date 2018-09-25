@@ -10,9 +10,9 @@ tags = []
 title = "In the beginning..."
 
 +++
-The beginning it where most things begin, but not this story. But, don't worry we'll get to the beginning in due time.
+_The beginning it where most things begin, but not this story. But, don't worry we'll get to the beginning in due time._
 
-For millennia, many people - shamans, priests, religious leaders, regular folk, astronomers/astrologers (for most of history these were the same profession) - just assumed that the universe was static, it had always existed and probably always would.  Even into the modern day (from The Enlightenment onward), many scientists also assumed that the universe had always existed.
+For millennia, most people - shamans, priests, religious leaders, regular folk, astronomers/astrologers (for most of history these were the same profession) - just assumed that the universe was static, it had always existed and probably always would.  Even into the modern day (from The Enlightenment onward), many scientists also assumed that the universe had always existed.
 
 Then in the 1920's, a man named Edwin Hubble pointed his telescope at the stars and discovered that the universe is actually expanding. Trace the motion of the galaxies we see backwards and at some point in the past, they all converge on a single point. A beginning. 
 
