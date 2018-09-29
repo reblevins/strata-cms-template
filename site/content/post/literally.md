@@ -91,8 +91,10 @@ Hopefully, you're starting to get a sense of the complexity of it all and how fa
 
 For most people, the question of how to read the Bible actually follows from a much more important question: _Why read the Bible?_
 
-Most people who read the Bible read it to gain meaning in life, inspiration, encouragement in difficult times, and to generally help make sense of this life.
+Most people who read the Bible don't read it to study history, although plenty may enjoy history, some may read to study the Bible itself, to help others understand it better. Most people read it to gain meaning in life, to be inspired, to gain encouragement in difficult times, and to generally help make sense of life.
 
-Sure, some people find the history interesting, but that is not the main reason most people read the Bible.
+So, to circle back around to where we began, I suggest to you that most people don't actually read the Bible literally. They read it for the deeper meaning, hoping to gain some insights for there daily lives, or maybe even some "secret" knowledge.
 
-To circle back around to where we began, most people don't really read the Bible literally. They read it for the deeper meaning, hoping to gain some "secret" insights to help them in their daily lives.
+### So, how does this help us?
+
+That's a good question. How does
