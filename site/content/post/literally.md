@@ -2,33 +2,17 @@
 date = "2018-09-28T22:18:44+00:00"
 description = ""
 draft = true
-image = ""
+image = "/images/alphabet-1679750_1920.jpg"
 multipart = false
 part = ""
 subtitle = ""
 tags = ["bible", "interpretation", "literalism"]
-title = "Literally?"
+title = "How to read the Bible?"
 
 +++
-The word literal gets thrown around a lot in modern-day English. You'll here or read people saying things like:
+How to read and interpret the Bible is an age-old question that has been around as long as there were stories to listen to or to read.
 
-> "OMG, I am, literally, dying over here."
-
-or
-
-> "He, literally, said that?"
-
-or
-
-> "I am, literally, reading the Bible here."
-
-Ok, maybe not that last one, but that is a good segway.
-
-For many people, it seems as though it has become doctrine to read the Bible literally. In other words, as the thinking goes, don't interpret, just read the "plain meaning" of the text. If you don't, you're somehow missing the mark, or might even be labeled a heretic.
-
-Others balk at the idea of reading the Bible literally. For them, it's all allegorical and metaphorical, nothing really happened exactly the way it is described, especially not those miracles. Frankly, as their thinking goes, miracles are rather an embarrassment to thoughtful, modern people.
-
-How to read and interpret the Bible, is an age-old question. It has been around as long as there were stories to listen to or to read. The very first interpreters, both oral and written, of the Jewish _torah_ (what we Christians call the pentateuch, or first five books of our Old Testament) struggled with this. For them, there were four fundamental ways of looking at and interpreting scripture:
+The very first interpreters of the Jewish _torah_ (what we Christians call the Pentateuch, or first five books of our Old Testament) struggled with this. For them, there were four fundamental ways of looking at and interpreting scripture:
 
 1. The literal, "plain" meaning.
 2. The deep (allegoric: hidden or symbolic) meaning.
@@ -36,6 +20,10 @@ How to read and interpret the Bible, is an age-old question. It has been around 
 4. And the secret or esoteric meaning.
 
 For these original interpreters, the Bible never, ever mean what it actually said. They reasoned that since it was from God, it must have a much deeper meaning than the "plain" meaning of the text. For them, the literal meaning was the least interesting meaning.
+
+For many Christians, today, it seems as though a literal reading has become the default, in fact the only way to read the Bible. "Don't interpret", as the thinking goes, "just read the 'plain meaning' of the text." If you don't, you're somehow missing the mark, or might even be labeled a heretic.
+
+Others balk at the idea of reading the Bible literally. For them, it's all allegorical and metaphorical, nothing really happened exactly the way it is described, especially not those miracles. "Frankly", as their thinking goes, "miracles are rather an embarrassment to thoughtful, modern people."
 
 For the early church, there were, similarly four levels of interpretation possible: the literal, the allegorical/symbolic, the moral and the eschatological. A verse of scripture could be interpreted via one or more of these levels and it could potentially have no literal meaning at all and be purely metaphorical or symbolic ([source](https://www.quora.com/Why-was-the-Catholic-Church-so-opposed-to-heliocentrism-for-example-in-the-Renaissance-Why-did-they-not-simply-claim-that-God-lived-in-the-Sun-so-we-go-around-Him)).
 
@@ -72,3 +60,15 @@ In other words, when we read or listen to something, how we interpret it is a ch
 **We make the same choices when we approach the Bible.**
 
 In other other words, a literal reading of the Bible is an exegetical choice, it's not a given.
+
+### Interpretation isn't an option
+
+As I mentioned above, many people will tell you to just "read the text, don't interpret". This, however, is impossible. We are constantly interpreting everything we see, read and hear, every single day.
+
+Anyone who has ever been in a relationship can attest to this fact. How many arguments have been started when our loved one or spouse says something and we misinterpret it. And these are people who speak the same language as us, and, often share the same culture, even the same house!
+
+Now, think about the Bible and it's many layers of meaning.
+
+First of all, most of us are not reading the text in the original language, we are reading a translation, which is actually, you guessed it, an _interpretation_ which has already been done for us.
+
+Let's add a second layer, culture. It may seem obvious, but we are separated from the original writers and audience of the Bible by a great culture gap which further complicates our ability to understand the Bible's meaning.
