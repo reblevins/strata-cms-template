@@ -67,8 +67,32 @@ You may have been told once or twice: "just read the text, don't interpret". Thi
 
 Anyone who has ever been in a relationship can attest to this fact. How many arguments have been started when our loved one or spouse says something and we misinterpret it. And these are people who speak the same language as us, and, often share the same culture, even the same house!
 
-Now, think about the Bible and it's many layers of meaning.
+Now, let's go back to the Bible and it's many layers.
+
+**Language**
 
 First of all, most of us are not reading the text in the original language, we are reading a translation, which is actually, you guessed it, an _interpretation_ which has already been done for us.
 
-Let's add a second layer, culture. It may seem obvious, but we are separated from the original writers and audience of the Bible by a great culture gap which further complicates our ability to understand the Bible's meaning.
+**Ambiguity**
+
+Let's add another layer: The original Hebrew that most of the Old Testament was written in, didn't make use of punctuation, capital letters or even vowels. On top of this, Hebrew can be very ambiguous at times. Thankfully, the men and women who translate the Bible for us, are extremely well trained in deciphering the original Hebrew giving us a fairly accurate _interpretation._
+
+**Culture**
+
+Let's add yet another layer: culture. It may seem obvious, but we are separated from the original writers and audience of the Bible by a great culture gap which further complicates our ability to understand the Bible's meaning. Anyone who has ever lived in a cross-cultural situation, whether in your own country or in another country, will know how difficult culture can make it for us to understand each other.
+
+**Time**
+
+Again, this may be obvious, but we are also separated from the people of the Bible by a great expanse of time. Think about how much our modern understanding of science, hygiene, etc. has come in just a few hundred years. Just a couple of hundred years ago, many people still believe that diseases were caused by [miasma](https://en.wikipedia.org/wiki/Miasma_theory), a noxious form of "bad air". This is not to say that we are so much more sophisticated than the ancient people of Biblical times, we simply have a vastly different worldview than them.
+
+Hopefully, you're starting to get a sense of the complexity of it all and how far removed we are from any kind of _literal_ reading of the text.
+
+### Why read the Bible?
+
+For most people, the question of how to read the Bible actually follows from a much more important question: _Why read the Bible?_
+
+Most people who read the Bible read it to gain meaning in life, inspiration, encouragement in difficult times, and to generally help make sense of this life.
+
+Sure, some people find the history interesting, but that is not the main reason most people read the Bible.
+
+To circle back around to where we began, most people don't really read the Bible literally. They read it for the deeper meaning, hoping to gain some "secret" insights to help them in their daily lives.
