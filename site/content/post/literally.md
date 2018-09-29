@@ -63,7 +63,7 @@ In other other words, a literal reading of the Bible is an exegetical choice, it
 
 ### Interpretation isn't an option
 
-As I mentioned above, many people will tell you to just "read the text, don't interpret". This, however, is impossible. We are constantly interpreting everything we see, read and hear, every single day.
+You may have been told once or twice: "just read the text, don't interpret". This, however, is impossible. We are constantly interpreting everything we see, read and hear, every single day and most of that is in a language and culture that we can understand.
 
 Anyone who has ever been in a relationship can attest to this fact. How many arguments have been started when our loved one or spouse says something and we misinterpret it. And these are people who speak the same language as us, and, often share the same culture, even the same house!
 
