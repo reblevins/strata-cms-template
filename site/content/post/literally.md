@@ -1,6 +1,6 @@
 +++
 date = "2018-09-28T22:18:44+00:00"
-description = ""
+description = "How to read and interpret the Bible is an age-old question that has been around as long as there were stories to listen to or to read."
 draft = true
 image = "/images/alphabet-1679750_1920.jpg"
 multipart = false
