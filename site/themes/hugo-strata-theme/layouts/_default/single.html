@@ -1,5 +1,7 @@
 {{ define "main" }}
-	<span>
+	<span class="post">
+		<img class="image" src="{{ .Params.image }}" alt="" />
+
 		<h1>{{ .Title }}</h1>
 
 		{{ partial "post-meta" . }}
@@ -8,6 +10,8 @@
 	<p>
 	    {{ .Content }}
 	</p>
+
+	{{ partial "social-share-buttons" . }}
 
 	{{ template "_internal/disqus.html" . }}
 {{ end }}

@@ -1,0 +1,3952 @@
+//colors
+$color_rangoon_green_approx: #1f1815;
+$white: #fff;
+$color_delta_approx: #a2a2a2;
+$color_puerto_rico_approx: #49bf9d;
+$color_picton_blue_approx: #2eb2ff;
+$color_boulder_approx: #787878;
+$gallery: #efefef;
+$color_black_haze_approx: #f7f7f7;
+$color_nobel_approx: #b2b2b2;
+$color_bon_jour_approx: #dfdfdf;
+$white_50: rgba(255, 255, 255, 0.5);
+$color_puerto_rico_10_approx: rgba(73, 191, 157, 0.1);
+$color_tradewind_approx: #5cc6a7;
+$color_keppel_approx: #3eb08f;
+$color_mercury_approx: #e7e7e7;
+$white_40: rgba(255, 255, 255, 0.4);
+$white_25: rgba(255, 255, 255, 0.25);
+$black_15: rgba(0, 0, 0, 0.15);
+$black_1: rgba(0, 0, 0, 0.01);
+$color_curious_blue_approx: #2795e9;
+$color_monza_approx: #bd081c;
+$color_pohutukawa_approx: #8c0615;
+$color_azure_approx: #3b5998;
+$color_astronaut_approx: #2d4373;
+$color_pickled_bluewood_approx: #35465c;
+$color_ebony_clay_approx: #222d3c;
+$color_danube_approx: #5f99cf;
+$color_steel_blue_approx: #3a80c1;
+$color_valencia_approx: #dd4b39;
+$color_thunderbird_approx: #c23321;
+$color_deep_cerulean_approx: #0077b5;
+$color_bahama_blue_approx: #046293;
+$color_tapa_approx: #777;
+$color_chicago_approx: #5e5e5e;
+$color_elm_approx: #1a7576;
+$color_eden_approx: #114c4c;
+$color_malachite_approx: #25d366;
+$color_eucalyptus_approx: #1da851;
+$blaze_orange: #ff6600;
+$color_blaze_orange_approx: #fb6200;
+$color_kashmir_blue_approx: #507299;
+$color_bismark_approx: #43648c;
+
+//fonts
+$font_0: Open Sans;
+$font_1: sans-serif;
+$font_2: Merriweather;
+$font_3: Courier New;
+$font_4: monospace;
+$font_5: FontAwesome;
+$font_6: Source Sans Pro;
+$font_7: Helvetica;
+$font_8: Helvetica Neue;
+$font_9: Arial;
+
+//urls
+$url_0: url("font-awesome.min.css");
+// $url_1: url(fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+$url_2: url("https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans");
+$url_3: url("images/overlay.png");
+$url_4: url("../images/colorado-2228788_1280.jpg");
+$url_5: url("../images/bg.jpg");
+
+//@extend-elements
+//original selectors
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+%extend_1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans");
+html {
+	@extend %extend_1;
+}
+body {
+	@extend %extend_1;
+	background: $white;
+	color: $color_delta_approx;
+	font-family: $font_0, $font_1;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+	&.is-touch {
+		#header {
+			background-attachment: scroll;
+			background-size: auto, cover;
+		}
+		.poptrox-popup {
+			.nav-next {
+				opacity: 1.0 !important;
+			}
+			.nav-previous {
+				opacity: 1.0 !important;
+			}
+			.closer {
+				opacity: 1.0 !important;
+			}
+		}
+		.image.thumb {
+			&:before {
+				opacity: 0.5 !important;
+			}
+			&:after {
+				display: none !important;
+			}
+		}
+	}
+	&.is-loading * {
+		animation: none !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: none !important;
+		&:before {
+			animation: none !important;
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: none !important;
+		}
+		&:after {
+			animation: none !important;
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: none !important;
+		}
+	}
+}
+div {
+	@extend %extend_1;
+}
+span {
+	@extend %extend_1;
+	&.attribution {
+		display: block;
+		text-align: right;
+		font-size: 0.5em;
+		line-height: 1em;
+	}
+}
+applet {
+	@extend %extend_1;
+}
+object {
+	@extend %extend_1;
+}
+iframe {
+	@extend %extend_1;
+}
+h1 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 2em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+h2 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+h3 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+h4 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+h5 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+h6 {
+	@extend %extend_1;
+	font-family: $font_2, $font_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+	line-height: 1em;
+	font-size: 0.7em;
+	line-height: 1.5em;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+p {
+	@extend %extend_1;
+	margin: 0 0 2em 0;
+}
+blockquote {
+	@extend %extend_1;
+	quotes: none;
+	border-left: solid 6px $gallery;
+	font-style: italic;
+	margin: 0 0 2em 0;
+	padding: 0.5em 0 0.5em 1.5em;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+pre {
+	@extend %extend_1;
+	font-family: $font_3, $font_4;
+	font-size: 0.9em;
+	margin: 0 0 2em 0;
+	code {
+		display: block;
+		line-height: 1.75em;
+		padding: 1em 1.5em;
+		overflow-x: auto;
+	}
+}
+a {
+	@extend %extend_1;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	border-bottom: dotted 1px;
+	color: $color_puerto_rico_approx;
+	text-decoration: none;
+	&:hover {
+		border-bottom-color: transparent;
+		color: $color_picton_blue_approx !important;
+		text-decoration: none;
+	}
+	&.avatar-logo {
+		position: relative;
+	}
+}
+abbr {
+	@extend %extend_1;
+}
+acronym {
+	@extend %extend_1;
+}
+address {
+	@extend %extend_1;
+}
+big {
+	@extend %extend_1;
+}
+cite {
+	@extend %extend_1;
+}
+code {
+	@extend %extend_1;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px $gallery;
+	font-family: $font_3, $font_4;
+	font-size: 0.9em;
+	margin: 0 0.25em;
+	padding: 0.25em 0.65em;
+}
+del {
+	@extend %extend_1;
+}
+dfn {
+	@extend %extend_1;
+}
+em {
+	@extend %extend_1;
+	font-style: italic;
+}
+img {
+	@extend %extend_1;
+}
+ins {
+	@extend %extend_1;
+}
+kbd {
+	@extend %extend_1;
+}
+q {
+	@extend %extend_1;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+s {
+	@extend %extend_1;
+}
+samp {
+	@extend %extend_1;
+}
+small {
+	@extend %extend_1;
+}
+strike {
+	@extend %extend_1;
+}
+strong {
+	@extend %extend_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+}
+sub {
+	@extend %extend_1;
+	font-size: 0.8em;
+	position: relative;
+	top: 0.5em;
+}
+sup {
+	@extend %extend_1;
+	font-size: 0.8em;
+	position: relative;
+	top: -0.5em;
+}
+tt {
+	@extend %extend_1;
+}
+var {
+	@extend %extend_1;
+}
+b {
+	@extend %extend_1;
+	color: $color_boulder_approx;
+	font-weight: 400;
+}
+u {
+	@extend %extend_1;
+}
+i {
+	@extend %extend_1;
+	font-style: italic;
+}
+center {
+	@extend %extend_1;
+}
+dl {
+	@extend %extend_1;
+	margin: 0 0 2em 0;
+}
+dt {
+	@extend %extend_1;
+}
+dd {
+	@extend %extend_1;
+}
+ol {
+	@extend %extend_1;
+	list-style: none;
+	list-style: decimal;
+	margin: 0 0 2em 0;
+	padding-left: 1.25em;
+	li {
+		padding-left: 0.25em;
+	}
+}
+ul {
+	@extend %extend_1;
+	list-style: none;
+	list-style: disc;
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+	li {
+		padding-left: 0.5em;
+	}
+	&.alt {
+		list-style: none;
+		padding-left: 0;
+		li {
+			border-top: solid 2px $gallery;
+			padding: 0.5em 0;
+			&:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+	&.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+			&:last-child {
+				padding-right: 0;
+			}
+			.icon:before {
+				font-size: 1.5em;
+			}
+		}
+	}
+	&.actions {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+			vertical-align: middle;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+		&.vertical {
+			li {
+				display: block;
+				padding: 1em 0 0;
+				&:first-child {
+					padding-top: 0;
+				}
+				> * {
+					margin-bottom: 0;
+				}
+			}
+			&.small li {
+				padding: 0.5em 0 0 0;
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+		&.fit {
+			display: table;
+			margin-left: -1em;
+			padding: 0;
+			table-layout: fixed;
+			width: calc(100% +1em);
+			li {
+				display: table-cell;
+				padding: 0 0 0 1em;
+				> * {
+					margin-bottom: 0;
+				}
+			}
+			&.small {
+				margin-left: -0.5em;
+				width: calc(100% +0.5em);
+				li {
+					padding: 0 0 0 0.5em;
+				}
+			}
+		}
+		&.small li {
+			padding: 0 0.5em 0 0;
+		}
+	}
+	&.labeled-icons {
+		list-style: none;
+		padding: 0;
+		li {
+			line-height: 1.75em;
+			margin: 1.5em 0 0 0;
+			padding-left: 2.25em;
+			position: relative;
+			&:first-child {
+				margin-top: 0;
+			}
+			a {
+				color: inherit;
+			}
+			h3 {
+				color: $color_nobel_approx;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 1em;
+			}
+		}
+	}
+}
+li {
+	@extend %extend_1;
+}
+fieldset {
+	@extend %extend_1;
+}
+form {
+	@extend %extend_1;
+	margin: 0 0 2em 0;
+}
+label {
+	@extend %extend_1;
+	color: $color_boulder_approx;
+	display: block;
+	font-size: 0.9em;
+	font-weight: 400;
+	margin: 0 0 1em 0;
+}
+legend {
+	@extend %extend_1;
+}
+table {
+	@extend %extend_1;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 2em 0;
+	width: 100%;
+	td {
+		padding: 0.75em 0.75em;
+	}
+	th {
+		color: $color_boulder_approx;
+		font-size: 0.9em;
+		font-weight: 400;
+		padding: 0 0.75em 0.75em 0.75em;
+		text-align: left;
+	}
+	thead {
+		border-bottom: solid 2px $gallery;
+	}
+	tfoot {
+		border-top: solid 2px $gallery;
+	}
+	&.alt {
+		border-collapse: separate;
+		thead {
+			border-bottom: 0;
+		}
+		tfoot {
+			border-top: 0;
+		}
+		tbody tr {
+			td {
+				border: solid 2px $gallery;
+				border-left-width: 0;
+				border-top-width: 0;
+				&:first-child {
+					border-left-width: 2px;
+				}
+			}
+			&:first-child td {
+				border-top-width: 2px;
+			}
+		}
+	}
+	tbody tr {
+		border: solid 1px $gallery;
+		border-left: 0;
+		border-right: 0;
+		&:nth-child(2n + 1) {
+			background-color: $color_black_haze_approx;
+		}
+	}
+}
+caption {
+	@extend %extend_1;
+}
+tbody {
+	@extend %extend_1;
+}
+tfoot {
+	@extend %extend_1;
+}
+thead {
+	@extend %extend_1;
+}
+tr {
+	@extend %extend_1;
+}
+th {
+	@extend %extend_1;
+}
+td {
+	@extend %extend_1;
+}
+article {
+	@extend %extend_1;
+	display: block;
+	&.special {
+		text-align: center;
+	}
+}
+aside {
+	@extend %extend_1;
+	display: block;
+}
+canvas {
+	@extend %extend_1;
+}
+details {
+	@extend %extend_1;
+	display: block;
+}
+embed {
+	@extend %extend_1;
+}
+figure {
+	@extend %extend_1;
+	display: block;
+}
+figcaption {
+	@extend %extend_1;
+	display: block;
+}
+footer {
+	@extend %extend_1;
+	display: block;
+}
+header {
+	@extend %extend_1;
+	display: block;
+	p {
+		color: $color_nobel_approx;
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+	h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+		line-height: 1.5em;
+	}
+	h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.8em;
+		line-height: 1.5em;
+	}
+	h4 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+		line-height: 1.5em;
+	}
+	h5 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+		line-height: 1.5em;
+	}
+	h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+		line-height: 1.5em;
+	}
+	&.major h2 {
+		font-size: 2em;
+	}
+}
+hgroup {
+	@extend %extend_1;
+	display: block;
+}
+menu {
+	@extend %extend_1;
+	display: block;
+}
+nav {
+	@extend %extend_1;
+	display: block;
+}
+output {
+	@extend %extend_1;
+}
+ruby {
+	@extend %extend_1;
+}
+section {
+	@extend %extend_1;
+	display: block;
+	&.special {
+		text-align: center;
+	}
+}
+summary {
+	@extend %extend_1;
+}
+time {
+	@extend %extend_1;
+}
+mark {
+	@extend %extend_1;
+}
+audio {
+	@extend %extend_1;
+}
+video {
+	@extend %extend_1;
+}
+* {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	&:before {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	&:after {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	&.\31 25\25 {
+		width: 100%;
+		max-width: 1200px;
+		min-width: 960px;
+	}
+	&.\37 5\25 {
+		width: 720px;
+	}
+	&.\35 0\25 {
+		width: 480px;
+	}
+	&.\32 5\25 {
+		width: 240px;
+	}
+}
+.post {
+	.image {
+		width: 100%;
+	}
+}
+@media screen and(max-width: 1800px) {
+	.container {
+		width: 960px;
+		&.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+		&.\37 5\25 {
+			width: 720px;
+		}
+		&.\35 0\25 {
+			width: 480px;
+		}
+		&.\32 5\25 {
+			width: 240px;
+		}
+	}
+	.row {
+		margin: 0 0 -1px -2.5em;
+		> * {
+			padding: 0 0 0 2.5em;
+		}
+		&.uniform {
+			margin: -2.5em 0 -1px -2.5em;
+			> * {
+				padding: 2.5em 0 0 2.5em;
+			}
+			&.\32 {
+				00\25 {
+					margin: -5em 0 -1px -5em;
+					> * {
+						padding: 5em 0 0 5em;
+					}
+				}
+				5\25 {
+					margin: -0.625em 0 -1px -0.625em;
+					> * {
+						padding: 0.625em 0 0 0.625em;
+					}
+				}
+			}
+			&.\31 50\25 {
+				margin: -3.75em 0 -1px -3.75em;
+				> * {
+					padding: 3.75em 0 0 3.75em;
+				}
+			}
+			&.\35 0\25 {
+				margin: -1.25em 0 -1px -1.25em;
+				> * {
+					padding: 1.25em 0 0 1.25em;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: 0 0 -1px -5em;
+				> * {
+					padding: 0 0 0 5em;
+				}
+			}
+			5\25 {
+				margin: 0 0 -1px -0.625em;
+				> * {
+					padding: 0 0 0 0.625em;
+				}
+			}
+		}
+		&.\31 50\25 {
+			margin: 0 0 -1px -3.75em;
+			> * {
+				padding: 0 0 0 3.75em;
+			}
+		}
+		&.\35 0\25 {
+			margin: 0 0 -1px -1.25em;
+			> * {
+				padding: 0 0 0 1.25em;
+			}
+		}
+	}
+	.\31 {
+		2u\28xlarge\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+		2u\24\28xlarge\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		1u\28xlarge\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		1u\24\28xlarge\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		0u\28xlarge\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		0u\24\28xlarge\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		u\28xlarge\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\39 {
+		u\28xlarge\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\38 {
+		u\28xlarge\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\37 {
+		u\28xlarge\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\36 {
+		u\28xlarge\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\35 {
+		u\28xlarge\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\34 {
+		u\28xlarge\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\33 {
+		u\28xlarge\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\32 {
+		u\28xlarge\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xlarge\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\-11u\28xlarge\29 {
+		margin-left: 91.66667%;
+	}
+	.\-10u\28xlarge\29 {
+		margin-left: 83.33333%;
+	}
+	.\-9u\28xlarge\29 {
+		margin-left: 75%;
+	}
+	.\-8u\28xlarge\29 {
+		margin-left: 66.66667%;
+	}
+	.\-7u\28xlarge\29 {
+		margin-left: 58.33333%;
+	}
+	.\-6u\28xlarge\29 {
+		margin-left: 50%;
+	}
+	.\-5u\28xlarge\29 {
+		margin-left: 41.66667%;
+	}
+	.\-4u\28xlarge\29 {
+		margin-left: 33.33333%;
+	}
+	.\-3u\28xlarge\29 {
+		margin-left: 25%;
+	}
+	.\-2u\28xlarge\29 {
+		margin-left: 16.66667%;
+	}
+	.\-1u\28xlarge\29 {
+		margin-left: 8.33333%;
+	}
+	body {
+		font-size: 12pt;
+	}
+	input {
+		font-size: 12pt;
+	}
+	select {
+		font-size: 12pt;
+	}
+	textarea {
+		font-size: 12pt;
+	}
+}
+@media screen and(max-width: 1280px) {
+	.container {
+		width: 960px;
+		&.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+		&.\37 5\25 {
+			width: 720px;
+		}
+		&.\35 0\25 {
+			width: 480px;
+		}
+		&.\32 5\25 {
+			width: 240px;
+		}
+	}
+	.row {
+		margin: 0 0 -1px -2em;
+		> * {
+			padding: 0 0 0 2em;
+		}
+		&.uniform {
+			margin: -2em 0 -1px -2em;
+			> * {
+				padding: 2em 0 0 2em;
+			}
+			&.\32 {
+				00\25 {
+					margin: -4em 0 -1px -4em;
+					> * {
+						padding: 4em 0 0 4em;
+					}
+				}
+				5\25 {
+					margin: -0.5em 0 -1px -0.5em;
+					> * {
+						padding: 0.5em 0 0 0.5em;
+					}
+				}
+			}
+			&.\31 50\25 {
+				margin: -3em 0 -1px -3em;
+				> * {
+					padding: 3em 0 0 3em;
+				}
+			}
+			&.\35 0\25 {
+				margin: -1em 0 -1px -1em;
+				> * {
+					padding: 1em 0 0 1em;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: 0 0 -1px -4em;
+				> * {
+					padding: 0 0 0 4em;
+				}
+			}
+			5\25 {
+				margin: 0 0 -1px -0.5em;
+				> * {
+					padding: 0 0 0 0.5em;
+				}
+			}
+		}
+		&.\31 50\25 {
+			margin: 0 0 -1px -3em;
+			> * {
+				padding: 0 0 0 3em;
+			}
+		}
+		&.\35 0\25 {
+			margin: 0 0 -1px -1em;
+			> * {
+				padding: 0 0 0 1em;
+			}
+		}
+	}
+	.\31 {
+		2u\28large\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+		2u\24\28large\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		1u\28large\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		1u\24\28large\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		0u\28large\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		0u\24\28large\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		u\28large\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\39 {
+		u\28large\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\38 {
+		u\28large\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\37 {
+		u\28large\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\36 {
+		u\28large\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\35 {
+		u\28large\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\34 {
+		u\28large\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\33 {
+		u\28large\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\32 {
+		u\28large\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28large\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\-11u\28large\29 {
+		margin-left: 91.66667%;
+	}
+	.\-10u\28large\29 {
+		margin-left: 83.33333%;
+	}
+	.\-9u\28large\29 {
+		margin-left: 75%;
+	}
+	.\-8u\28large\29 {
+		margin-left: 66.66667%;
+	}
+	.\-7u\28large\29 {
+		margin-left: 58.33333%;
+	}
+	.\-6u\28large\29 {
+		margin-left: 50%;
+	}
+	.\-5u\28large\29 {
+		margin-left: 41.66667%;
+	}
+	.\-4u\28large\29 {
+		margin-left: 33.33333%;
+	}
+	.\-3u\28large\29 {
+		margin-left: 25%;
+	}
+	.\-2u\28large\29 {
+		margin-left: 16.66667%;
+	}
+	.\-1u\28large\29 {
+		margin-left: 8.33333%;
+	}
+	#header {
+		padding: 6em 3em 3em;
+		width: 30%;
+		h1 {
+			font-size: 1.25em;
+			br {
+				display: none;
+			}
+		}
+	}
+	#footer {
+		padding: 0 3em 5em;
+		width: 30%;
+		.copyright li {
+			border-left-width: 0;
+			display: block;
+			line-height: 2.25em;
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+	#main {
+		margin-left: 30%;
+		max-width: none;
+		padding: 6em 3em 3em;
+		width: calc(100% - 30%);
+	}
+}
+@media screen and(max-width: 980px) {
+	.container {
+		width: 960px;
+		&.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+		&.\37 5\25 {
+			width: 720px;
+		}
+		&.\35 0\25 {
+			width: 480px;
+		}
+		&.\32 5\25 {
+			width: 240px;
+		}
+	}
+	.row {
+		margin: 0 0 -1px -2em;
+		> * {
+			padding: 0 0 0 2em;
+		}
+		&.uniform {
+			margin: -2em 0 -1px -2em;
+			> * {
+				padding: 2em 0 0 2em;
+			}
+			&.\32 {
+				00\25 {
+					margin: -4em 0 -1px -4em;
+					> * {
+						padding: 4em 0 0 4em;
+					}
+				}
+				5\25 {
+					margin: -0.5em 0 -1px -0.5em;
+					> * {
+						padding: 0.5em 0 0 0.5em;
+					}
+				}
+			}
+			&.\31 50\25 {
+				margin: -3em 0 -1px -3em;
+				> * {
+					padding: 3em 0 0 3em;
+				}
+			}
+			&.\35 0\25 {
+				margin: -1em 0 -1px -1em;
+				> * {
+					padding: 1em 0 0 1em;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: 0 0 -1px -4em;
+				> * {
+					padding: 0 0 0 4em;
+				}
+			}
+			5\25 {
+				margin: 0 0 -1px -0.5em;
+				> * {
+					padding: 0 0 0 0.5em;
+				}
+			}
+		}
+		&.\31 50\25 {
+			margin: 0 0 -1px -3em;
+			> * {
+				padding: 0 0 0 3em;
+			}
+		}
+		&.\35 0\25 {
+			margin: 0 0 -1px -1em;
+			> * {
+				padding: 0 0 0 1em;
+			}
+		}
+	}
+	.\31 {
+		2u\28medium\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+		2u\24\28medium\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		1u\28medium\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		1u\24\28medium\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		0u\28medium\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		0u\24\28medium\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		u\28medium\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\39 {
+		u\28medium\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\38 {
+		u\28medium\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\37 {
+		u\28medium\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\36 {
+		u\28medium\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\35 {
+		u\28medium\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\34 {
+		u\28medium\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\33 {
+		u\28medium\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\32 {
+		u\28medium\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28medium\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\-11u\28medium\29 {
+		margin-left: 91.66667%;
+	}
+	.\-10u\28medium\29 {
+		margin-left: 83.33333%;
+	}
+	.\-9u\28medium\29 {
+		margin-left: 75%;
+	}
+	.\-8u\28medium\29 {
+		margin-left: 66.66667%;
+	}
+	.\-7u\28medium\29 {
+		margin-left: 58.33333%;
+	}
+	.\-6u\28medium\29 {
+		margin-left: 50%;
+	}
+	.\-5u\28medium\29 {
+		margin-left: 41.66667%;
+	}
+	.\-4u\28medium\29 {
+		margin-left: 33.33333%;
+	}
+	.\-3u\28medium\29 {
+		margin-left: 25%;
+	}
+	.\-2u\28medium\29 {
+		margin-left: 16.66667%;
+	}
+	.\-1u\28medium\29 {
+		margin-left: 8.33333%;
+	}
+	#header {
+		background-attachment: scroll;
+		background-position: top left, center center;
+		background-size: auto, cover;
+		left: auto;
+		padding: 6em 4em;
+		position: relative;
+		text-align: center;
+		top: auto;
+		width: 100%;
+		h1 {
+			font-size: 1.75em;
+			br {
+				display: inline;
+			}
+		}
+	}
+	#footer {
+		background-attachment: scroll;
+		background-color: $color_rangoon_green_approx;
+		background-image: $url_3, $url_5;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
+		bottom: auto;
+		left: auto;
+		padding: 4em 4em 6em 4em;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		.icons {
+			margin: 0 0 1em 0;
+		}
+		.copyright {
+			margin: 0 0 1em 0;
+			li {
+				border-left-width: 1px;
+				display: inline-block;
+				line-height: 1em;
+				margin-left: 0.75em;
+				padding-left: 0.75em;
+			}
+		}
+	}
+	#main {
+		margin: 0;
+		padding: 6em 4em;
+		width: 100%;
+	}
+	h1 br {
+		display: none;
+	}
+	h2 br {
+		display: none;
+	}
+	h3 br {
+		display: none;
+	}
+	h4 br {
+		display: none;
+	}
+	h5 br {
+		display: none;
+	}
+	h6 br {
+		display: none;
+	}
+	ul.icons li .icon {
+		font-size: 1.25em;
+	}
+}
+@media screen and(max-width: 736px) {
+	.container {
+		width: 960px;
+		&.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+		&.\37 5\25 {
+			width: 720px;
+		}
+		&.\35 0\25 {
+			width: 480px;
+		}
+		&.\32 5\25 {
+			width: 240px;
+		}
+	}
+	.row {
+		margin: 0 0 -1px -1.5em;
+		> * {
+			padding: 0 0 0 1.5em;
+		}
+		&.uniform {
+			margin: -1.5em 0 -1px -1.5em;
+			> * {
+				padding: 1.5em 0 0 1.5em;
+			}
+			&.\32 {
+				00\25 {
+					margin: -3em 0 -1px -3em;
+					> * {
+						padding: 3em 0 0 3em;
+					}
+				}
+				5\25 {
+					margin: -0.375em 0 -1px -0.375em;
+					> * {
+						padding: 0.375em 0 0 0.375em;
+					}
+				}
+			}
+			&.\31 50\25 {
+				margin: -2.25em 0 -1px -2.25em;
+				> * {
+					padding: 2.25em 0 0 2.25em;
+				}
+			}
+			&.\35 0\25 {
+				margin: -0.75em 0 -1px -0.75em;
+				> * {
+					padding: 0.75em 0 0 0.75em;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: 0 0 -1px -3em;
+				> * {
+					padding: 0 0 0 3em;
+				}
+			}
+			5\25 {
+				margin: 0 0 -1px -0.375em;
+				> * {
+					padding: 0 0 0 0.375em;
+				}
+			}
+		}
+		&.\31 50\25 {
+			margin: 0 0 -1px -2.25em;
+			> * {
+				padding: 0 0 0 2.25em;
+			}
+		}
+		&.\35 0\25 {
+			margin: 0 0 -1px -0.75em;
+			> * {
+				padding: 0 0 0 0.75em;
+			}
+		}
+	}
+	.\31 {
+		2u\28small\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+		2u\24\28small\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		1u\28small\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		1u\24\28small\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		0u\28small\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		0u\24\28small\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		u\28small\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\39 {
+		u\28small\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\38 {
+		u\28small\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\37 {
+		u\28small\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\36 {
+		u\28small\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\35 {
+		u\28small\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\34 {
+		u\28small\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\33 {
+		u\28small\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\32 {
+		u\28small\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28small\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\-11u\28small\29 {
+		margin-left: 91.66667%;
+	}
+	.\-10u\28small\29 {
+		margin-left: 83.33333%;
+	}
+	.\-9u\28small\29 {
+		margin-left: 75%;
+	}
+	.\-8u\28small\29 {
+		margin-left: 66.66667%;
+	}
+	.\-7u\28small\29 {
+		margin-left: 58.33333%;
+	}
+	.\-6u\28small\29 {
+		margin-left: 50%;
+	}
+	.\-5u\28small\29 {
+		margin-left: 41.66667%;
+	}
+	.\-4u\28small\29 {
+		margin-left: 33.33333%;
+	}
+	.\-3u\28small\29 {
+		margin-left: 25%;
+	}
+	.\-2u\28small\29 {
+		margin-left: 16.66667%;
+	}
+	.\-1u\28small\29 {
+		margin-left: 8.33333%;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	#header {
+		padding: 2.25em 1.5em;
+		h1 {
+			font-size: 1.35em;
+		}
+	}
+	#footer {
+		padding: 2.25em 1.5em;
+	}
+	#main {
+		padding: 2.25em 1.5em 0.25em 1.5em;
+		> section {
+			margin: 2.25em 0 0 0;
+			padding: 2.25em 0 0 0;
+		}
+	}
+	.poptrox-popup {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		.nav-next:before {
+			margin-top: -1em;
+		}
+		.nav-previous:before {
+			margin-top: -1em;
+		}
+	}
+	section.special {
+		text-align: center;
+	}
+	article.special {
+		text-align: center;
+	}
+	header.major h2 {
+		font-size: 1.35em;
+	}
+	ul.labeled-icons li {
+		padding-left: 2em;
+		h3 {
+			line-height: 1.75em;
+		}
+	}
+}
+@media screen and(max-width: 480px) {
+	.container {
+		width: 960px;
+		&.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+		&.\37 5\25 {
+			width: 720px;
+		}
+		&.\35 0\25 {
+			width: 480px;
+		}
+		&.\32 5\25 {
+			width: 240px;
+		}
+	}
+	.row {
+		margin: 0 0 -1px -1.5em;
+		> * {
+			padding: 0 0 0 1.5em;
+		}
+		&.uniform {
+			margin: -1.5em 0 -1px -1.5em;
+			> * {
+				padding: 1.5em 0 0 1.5em;
+			}
+			&.\32 {
+				00\25 {
+					margin: -3em 0 -1px -3em;
+					> * {
+						padding: 3em 0 0 3em;
+					}
+				}
+				5\25 {
+					margin: -0.375em 0 -1px -0.375em;
+					> * {
+						padding: 0.375em 0 0 0.375em;
+					}
+				}
+			}
+			&.\31 50\25 {
+				margin: -2.25em 0 -1px -2.25em;
+				> * {
+					padding: 2.25em 0 0 2.25em;
+				}
+			}
+			&.\35 0\25 {
+				margin: -0.75em 0 -1px -0.75em;
+				> * {
+					padding: 0.75em 0 0 0.75em;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: 0 0 -1px -3em;
+				> * {
+					padding: 0 0 0 3em;
+				}
+			}
+			5\25 {
+				margin: 0 0 -1px -0.375em;
+				> * {
+					padding: 0 0 0 0.375em;
+				}
+			}
+		}
+		&.\31 50\25 {
+			margin: 0 0 -1px -2.25em;
+			> * {
+				padding: 0 0 0 2.25em;
+			}
+		}
+		&.\35 0\25 {
+			margin: 0 0 -1px -0.75em;
+			> * {
+				padding: 0 0 0 0.75em;
+			}
+		}
+	}
+	.\31 {
+		2u\28xsmall\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+		}
+		2u\24\28xsmall\29 {
+			width: 100%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		1u\28xsmall\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		1u\24\28xsmall\29 {
+			width: 91.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		0u\28xsmall\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		0u\24\28xsmall\29 {
+			width: 83.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+		u\28xsmall\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 8.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\39 {
+		u\28xsmall\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 75%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\38 {
+		u\28xsmall\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 66.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\37 {
+		u\28xsmall\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 58.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\36 {
+		u\28xsmall\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 50%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\35 {
+		u\28xsmall\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 41.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\34 {
+		u\28xsmall\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 33.3333333333%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\33 {
+		u\28xsmall\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 25%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\32 {
+		u\28xsmall\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+		}
+		u\24\28xsmall\29 {
+			width: 16.6666666667%;
+			clear: none;
+			margin-left: 0;
+			+ * {
+				clear: left;
+			}
+		}
+	}
+	.\-11u\28xsmall\29 {
+		margin-left: 91.66667%;
+	}
+	.\-10u\28xsmall\29 {
+		margin-left: 83.33333%;
+	}
+	.\-9u\28xsmall\29 {
+		margin-left: 75%;
+	}
+	.\-8u\28xsmall\29 {
+		margin-left: 66.66667%;
+	}
+	.\-7u\28xsmall\29 {
+		margin-left: 58.33333%;
+	}
+	.\-6u\28xsmall\29 {
+		margin-left: 50%;
+	}
+	.\-5u\28xsmall\29 {
+		margin-left: 41.66667%;
+	}
+	.\-4u\28xsmall\29 {
+		margin-left: 33.33333%;
+	}
+	.\-3u\28xsmall\29 {
+		margin-left: 25%;
+	}
+	.\-2u\28xsmall\29 {
+		margin-left: 16.66667%;
+	}
+	.\-1u\28xsmall\29 {
+		margin-left: 8.33333%;
+	}
+	#header {
+		padding: 4.5em 1.5em;
+		h1 br {
+			display: none;
+		}
+	}
+	ul.actions {
+		margin: 0 0 2em 0;
+		li {
+			display: block;
+			padding: 1em 0 0;
+			text-align: center;
+			width: 100%;
+			&:first-child {
+				padding-top: 0;
+			}
+			> * {
+				margin: 0 !important;
+				width: 100%;
+				&.icon:before {
+					margin-left: -2em;
+				}
+			}
+		}
+		&.small li {
+			padding: 0.5em 0 0 0;
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+	#footer .copyright li {
+		border-left-width: 0;
+		display: block;
+		line-height: 2.25em;
+		margin-left: 0;
+		padding-left: 0;
+	}
+}
+.row {
+	border-bottom: solid 1px transparent;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	margin: 0 0 -1px -2.5em;
+	> * {
+		float: left;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		padding: 0 0 0 2.5em;
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+	&:before {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+	&.uniform {
+		margin: -2.5em 0 -1px -2.5em;
+		> * {
+			padding: 2.5em 0 0 2.5em;
+			> {
+				:first-child {
+					margin-top: 0;
+				}
+				:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&.\32 {
+			00\25 {
+				margin: -5em 0 -1px -5em;
+				> * {
+					padding: 5em 0 0 5em;
+				}
+			}
+			5\25 {
+				margin: -0.625em 0 -1px -0.625em;
+				> * {
+					padding: 0.625em 0 0 0.625em;
+				}
+			}
+		}
+		&.\30 \25 {
+			margin: 0 0 -1px 0;
+			> * {
+				padding: 0;
+			}
+		}
+		&.\31 50\25 {
+			margin: -3.75em 0 -1px -3.75em;
+			> * {
+				padding: 3.75em 0 0 3.75em;
+			}
+		}
+		&.\35 0\25 {
+			margin: -1.25em 0 -1px -1.25em;
+			> * {
+				padding: 1.25em 0 0 1.25em;
+			}
+		}
+	}
+	&.\32 {
+		00\25 {
+			margin: 0 0 -1px -5em;
+			> * {
+				padding: 0 0 0 5em;
+			}
+		}
+		5\25 {
+			margin: 0 0 -1px -0.625em;
+			> * {
+				padding: 0 0 0 0.625em;
+			}
+		}
+	}
+	&.\30 \25 {
+		margin: 0 0 -1px 0;
+		> * {
+			padding: 0;
+		}
+	}
+	&.\31 50\25 {
+		margin: 0 0 -1px -3.75em;
+		> * {
+			padding: 0 0 0 3.75em;
+		}
+	}
+	&.\35 0\25 {
+		margin: 0 0 -1px -1.25em;
+		> * {
+			padding: 0 0 0 1.25em;
+		}
+	}
+}
+.\31 {
+	2u {
+		width: 100%;
+		clear: none;
+		margin-left: 0;
+	}
+	2u\24 {
+		width: 100%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+	1u {
+		width: 91.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+	1u\24 {
+		width: 91.6666666667%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+	0u {
+		width: 83.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+	0u\24 {
+		width: 83.3333333333%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+	u {
+		width: 8.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 8.3333333333%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\39 {
+	u {
+		width: 75%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 75%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\38 {
+	u {
+		width: 66.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 66.6666666667%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\37 {
+	u {
+		width: 58.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 58.3333333333%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\36 {
+	u {
+		width: 50%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 50%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\35 {
+	u {
+		width: 41.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 41.6666666667%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\34 {
+	u {
+		width: 33.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 33.3333333333%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\33 {
+	u {
+		width: 25%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 25%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\32 {
+	u {
+		width: 16.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+	u\24 {
+		width: 16.6666666667%;
+		clear: none;
+		margin-left: 0;
+		+ * {
+			clear: left;
+		}
+	}
+}
+.\-11u {
+	margin-left: 91.66667%;
+}
+.\-10u {
+	margin-left: 83.33333%;
+}
+.\-9u {
+	margin-left: 75%;
+}
+.\-8u {
+	margin-left: 66.66667%;
+}
+.\-7u {
+	margin-left: 58.33333%;
+}
+.\-6u {
+	margin-left: 50%;
+}
+.\-5u {
+	margin-left: 41.66667%;
+}
+.\-4u {
+	margin-left: 33.33333%;
+}
+.\-3u {
+	margin-left: 25%;
+}
+.\-2u {
+	margin-left: 16.66667%;
+}
+.\-1u {
+	margin-left: 8.33333%;
+}
+input {
+	color: $color_delta_approx;
+	font-family: $font_0, $font_1;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+}
+select {
+	color: $color_delta_approx;
+	font-family: $font_0, $font_1;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+	appearance: none;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px transparent;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.75em;
+	text-decoration: none;
+	width: 100%;
+	height: 2.75em;
+	&:invalid {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:focus {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+textarea {
+	color: $color_delta_approx;
+	font-family: $font_0, $font_1;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+	appearance: none;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px transparent;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.75em;
+	text-decoration: none;
+	width: 100%;
+	padding: 0.75em;
+	&:invalid {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:focus {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+.quote {
+	font-style: italic;
+	position: relative;
+	margin-bottom: 0.5em;
+}
+hr {
+	border: 0;
+	border-bottom: solid 2px $gallery;
+	margin: 2em 0;
+	&.major {
+		margin: 3em 0;
+	}
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+input[type="text"] {
+	appearance: none;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px transparent;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.75em;
+	text-decoration: none;
+	width: 100%;
+	height: 2.75em;
+	&:invalid {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:focus {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+input[type="password"] {
+	appearance: none;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px transparent;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.75em;
+	text-decoration: none;
+	width: 100%;
+	height: 2.75em;
+	&:invalid {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:focus {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+input[type="email"] {
+	appearance: none;
+	background: $color_black_haze_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px transparent;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.75em;
+	text-decoration: none;
+	width: 100%;
+	height: 2.75em;
+	&:invalid {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:focus {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+.select-wrapper {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	&:before {
+		font-family: $font_5;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+		color: $color_bon_jour_approx;
+		content: '\f078';
+		display: block;
+		height: 2.75em;
+		line-height: 2.75em;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 2.75em;
+	}
+	select::-ms-expand {
+		display: none;
+	}
+}
+input[type="checkbox"] {
+	appearance: none;
+	display: block;
+	float: left;
+	margin-right: -2em;
+	opacity: 0;
+	width: 1em;
+	z-index: -1;
+	+ label {
+		text-decoration: none;
+		color: $color_delta_approx;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 400;
+		padding-left: 2.4em;
+		padding-right: 0.75em;
+		position: relative;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			background: $color_black_haze_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0.35em;
+			border: solid 2px transparent;
+			content: '';
+			display: inline-block;
+			height: 1.65em;
+			left: 0;
+			line-height: 1.58125em;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 1.65em;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0.35em;
+		}
+	}
+	&:checked + label:before {
+		background: $color_boulder_approx;
+		border-color: $color_boulder_approx;
+		color: $white;
+		content: '\f00c';
+	}
+	&:focus + label:before {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+input[type="radio"] {
+	appearance: none;
+	display: block;
+	float: left;
+	margin-right: -2em;
+	opacity: 0;
+	width: 1em;
+	z-index: -1;
+	+ label {
+		text-decoration: none;
+		color: $color_delta_approx;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 400;
+		padding-left: 2.4em;
+		padding-right: 0.75em;
+		position: relative;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			background: $color_black_haze_approx;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0.35em;
+			border: solid 2px transparent;
+			content: '';
+			display: inline-block;
+			height: 1.65em;
+			left: 0;
+			line-height: 1.58125em;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 1.65em;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 100%;
+		}
+	}
+	&:checked + label:before {
+		background: $color_boulder_approx;
+		border-color: $color_boulder_approx;
+		color: $white;
+		content: '\f00c';
+	}
+	&:focus + label:before {
+		border-color: $color_puerto_rico_approx;
+	}
+}
+::-webkit-input-placeholder {
+	color: $color_nobel_approx !important;
+	opacity: 1.0;
+}
+:-moz-placeholder {
+	color: $color_nobel_approx !important;
+	opacity: 1.0;
+}
+::-moz-placeholder {
+	color: $color_nobel_approx !important;
+	opacity: 1.0;
+}
+:-ms-input-placeholder {
+	color: $color_nobel_approx !important;
+	opacity: 1.0;
+}
+.formerize-placeholder {
+	color: $color_nobel_approx !important;
+	opacity: 1.0;
+}
+.box {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 2px $gallery;
+	margin-bottom: 2em;
+	padding: 1.5em;
+	&.alt {
+		border: 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		padding: 0;
+	}
+	> :last-child {
+		margin-bottom: 0;
+		> :last-child {
+			margin-bottom: 0;
+			> :last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.icon {
+	text-decoration: none;
+	border-bottom: none;
+	position: relative;
+	&:before {
+		font-family: $font_5;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+	> .label {
+		display: none;
+	}
+}
+.image {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	&:before {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.2s ease-in-out;
+		background: $url_3;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0.35em;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	&.thumb {
+		text-align: center;
+		&:after {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: opacity 0.2s ease-in-out;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0.35em;
+			border: solid 3px $white_50;
+			color: $white;
+			content: 'View';
+			display: inline-block;
+			font-size: 0.8em;
+			font-weight: 400;
+			left: 50%;
+			line-height: 2.25em;
+			margin: -1.25em 0 0 -3em;
+			opacity: 0;
+			padding: 0 1.5em;
+			position: absolute;
+			text-align: center;
+			text-decoration: none;
+			top: 50%;
+			white-space: nowrap;
+		}
+	}
+	img {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0.35em;
+		display: block;
+	}
+	&.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+		max-width: 40%;
+		img {
+			width: 100%;
+		}
+	}
+	&.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+		max-width: 40%;
+		img {
+			width: 100%;
+		}
+	}
+	&.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
+.avatar-logo {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100%;
+	&:before {
+		display: none;
+	}
+	img {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 100%;
+		width: 100%;
+	}
+}
+.table-wrapper {
+	overflow-x: auto;
+}
+input[type="submit"] {
+	appearance: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 3px $gallery;
+	color: $color_boulder_approx !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 3.15em;
+	height: calc(2.75em +6px);
+	line-height: 2.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	&:hover {
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&:active {
+		background-color: $color_puerto_rico_10_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&.icon {
+		padding-left: 1.35em;
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+	&.fit {
+		display: block;
+		margin: 0 0 1em 0;
+		min-width: 0;
+		width: 100%;
+	}
+	&.small {
+		font-size: 0.8em;
+	}
+	&.big {
+		font-size: 1.35em;
+	}
+	&.special {
+		background-color: $color_puerto_rico_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $white !important;
+		&:hover {
+			background-color: $color_tradewind_approx;
+			border-color: $color_tradewind_approx;
+		}
+		&:active {
+			background-color: $color_keppel_approx;
+			border-color: $color_keppel_approx;
+		}
+	}
+	&.disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+	&:disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+}
+input[type="reset"] {
+	appearance: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 3px $gallery;
+	color: $color_boulder_approx !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 3.15em;
+	height: calc(2.75em +6px);
+	line-height: 2.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	&:hover {
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&:active {
+		background-color: $color_puerto_rico_10_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&.icon {
+		padding-left: 1.35em;
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+	&.fit {
+		display: block;
+		margin: 0 0 1em 0;
+		min-width: 0;
+		width: 100%;
+	}
+	&.small {
+		font-size: 0.8em;
+	}
+	&.big {
+		font-size: 1.35em;
+	}
+	&.special {
+		background-color: $color_puerto_rico_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $white !important;
+		&:hover {
+			background-color: $color_tradewind_approx;
+			border-color: $color_tradewind_approx;
+		}
+		&:active {
+			background-color: $color_keppel_approx;
+			border-color: $color_keppel_approx;
+		}
+	}
+	&.disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+	&:disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+}
+input[type="button"] {
+	appearance: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 3px $gallery;
+	color: $color_boulder_approx !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 3.15em;
+	height: calc(2.75em +6px);
+	line-height: 2.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	&:hover {
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&:active {
+		background-color: $color_puerto_rico_10_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&.icon {
+		padding-left: 1.35em;
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+	&.fit {
+		display: block;
+		margin: 0 0 1em 0;
+		min-width: 0;
+		width: 100%;
+	}
+	&.small {
+		font-size: 0.8em;
+	}
+	&.big {
+		font-size: 1.35em;
+	}
+	&.special {
+		background-color: $color_puerto_rico_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $white !important;
+		&:hover {
+			background-color: $color_tradewind_approx;
+			border-color: $color_tradewind_approx;
+		}
+		&:active {
+			background-color: $color_keppel_approx;
+			border-color: $color_keppel_approx;
+		}
+	}
+	&.disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+	&:disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+}
+.button {
+	appearance: none;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	border: solid 3px $gallery;
+	color: $color_boulder_approx !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 3.15em;
+	height: calc(2.75em +6px);
+	line-height: 2.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-family: $font_6, $font_7, $font_1;
+	background-color: transparent;
+	color: $color_boulder_approx !important;
+	padding: 0 1.5em;
+	margin: 0 0 1.5em 0;
+	text-align: center;
+	white-space: nowrap;
+	border: solid 3px $gallery;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	cursor: pointer;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	&:hover {
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&:active {
+		background-color: $color_puerto_rico_10_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $color_puerto_rico_approx !important;
+	}
+	&.icon {
+		padding-left: 1.35em;
+		&:before {
+			margin-right: 0.5em;
+		}
+	}
+	&.fit {
+		display: block;
+		margin: 0 0 1em 0;
+		min-width: 0;
+		width: 100%;
+	}
+	&.small {
+		font-size: 0.8em;
+	}
+	&.big {
+		font-size: 1.35em;
+	}
+	&.special {
+		background-color: $color_puerto_rico_approx;
+		border-color: $color_puerto_rico_approx;
+		color: $white !important;
+		&:hover {
+			background-color: $color_tradewind_approx;
+			border-color: $color_tradewind_approx;
+		}
+		&:active {
+			background-color: $color_keppel_approx;
+			border-color: $color_keppel_approx;
+		}
+	}
+	&.disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+	&:disabled {
+		background-color: $color_mercury_approx !important;
+		border-color: $color_mercury_approx !important;
+		color: $color_nobel_approx !important;
+		cursor: default;
+	}
+}
+.work-item {
+	margin: 0 0 2em 0;
+	.image {
+		margin: 0 0 1.5em 0;
+	}
+	a {
+		color: inherit;
+	}
+	h3 {
+		font-size: 1em;
+		margin: 0 0 0.5em 0;
+	}
+	p {
+		font-size: 0.8em;
+		line-height: 1.5em;
+		margin: 0;
+	}
+}
+#header {
+	background-color: $color_rangoon_green_approx;
+	background-attachment: fixed;
+	background-image: $url_4;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	color: $white_50;
+	height: 100%;
+	left: 0;
+	padding: 8em 4em 0 0;
+	position: fixed;
+	text-align: right;
+	top: 0;
+	width: 35%;
+	strong {
+		color: $white;
+	}
+	b {
+		color: $white;
+	}
+	h2 {
+		color: $white;
+	}
+	h3 {
+		color: $white;
+	}
+	h4 {
+		color: $white;
+	}
+	h5 {
+		color: $white;
+	}
+	h6 {
+		color: $white;
+	}
+	h1 {
+		color: $white_50;
+		font-style: italic;
+		font-size: 1.35em;
+		line-height: 1.75em;
+		margin: 0;
+	}
+	.avatar {
+		margin: 0 0 1em 0;
+		width: 6.25em;
+		position: absolute;
+		z-index: -1;
+	}
+	.logo {
+		margin: 0 0 1em 0;
+		width: 6.25em;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.4s cubic-bezier(0.22, 0.61, 0.42, 1.25);
+		border: 4px solid $white;
+		&:hover {
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: rotate(180deg);
+		}
+	}
+}
+#footer {
+	bottom: 0;
+	left: 0;
+	padding: 0 4em 6em 0;
+	position: fixed;
+	text-align: right;
+	width: 35%;
+	.icons {
+		margin: 1em 0 0;
+		a {
+			color: $white_40;
+		}
+	}
+	.copyright {
+		color: $white_40;
+		font-size: 0.8em;
+		list-style: none;
+		margin: 1em 0 0;
+		padding: 0;
+		li {
+			border-left: solid 1px $white_25;
+			display: inline-block;
+			line-height: 1em;
+			margin-left: 0.75em;
+			padding-left: 0.75em;
+			&:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+			a {
+				color: inherit;
+			}
+		}
+	}
+}
+#main {
+	margin-left: 35%;
+	max-width: 54em;
+	padding: 8em 4em 4em;
+	width: calc(100% - 35%);
+	> section {
+		border-top: solid 2px $gallery;
+		margin: 4em 0 0;
+		padding: 4em 0 0;
+		&:first-child {
+			border-top: 0;
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+@-moz-keyframes spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	100% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(360deg);
+	}
+}
+.poptrox-popup {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: content-box;
+	background: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.35em;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0.1em 0.15em 0 $black_15;
+	overflow: hidden;
+	padding-bottom: 3em;
+	.loader {
+		text-decoration: none;
+		animation: spin 1s linear infinite;
+		font-size: 1.5em;
+		height: 1em;
+		left: 50%;
+		line-height: 1em;
+		margin: -0.5em 0 0 -0.5em;
+		position: absolute;
+		top: 50%;
+		width: 1em;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			content: '\f1ce';
+		}
+	}
+	.caption {
+		background: $white;
+		bottom: 0;
+		cursor: default;
+		font-size: 0.9em;
+		height: 3em;
+		left: 0;
+		line-height: 2.8em;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		z-index: 1;
+	}
+	.nav-next {
+		text-decoration: none;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.2s ease-in-out;
+		background: $black_1;
+		cursor: pointer;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 50%;
+		right: 0;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			color: $white;
+			font-size: 2.5em;
+			height: 1em;
+			line-height: 1em;
+			margin-top: -0.75em;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			width: 1.5em;
+			content: '\f105';
+			right: 0;
+		}
+	}
+	.nav-previous {
+		text-decoration: none;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.2s ease-in-out;
+		background: $black_1;
+		cursor: pointer;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 50%;
+		left: 0;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			color: $white;
+			font-size: 2.5em;
+			height: 1em;
+			line-height: 1em;
+			margin-top: -0.75em;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			width: 1.5em;
+			content: '\f104';
+			left: 0;
+		}
+	}
+	.closer {
+		text-decoration: none;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.2s ease-in-out;
+		color: $white;
+		height: 4em;
+		line-height: 4em;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 4em;
+		z-index: 2;
+		&:before {
+			font-family: $font_5;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: content-box;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 100%;
+			border: solid 3px $white_50;
+			content: '\f00d';
+			display: block;
+			font-size: 1em;
+			height: 1.75em;
+			left: 50%;
+			line-height: 1.75em;
+			margin: -0.875em 0 0 -0.875em;
+			position: absolute;
+			top: 50%;
+			width: 1.75em;
+		}
+	}
+	&:hover {
+		.nav-next {
+			opacity: 0.5;
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+		.nav-previous {
+			opacity: 0.5;
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+		.closer {
+			opacity: 0.5;
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+	}
+}
+.spacer {
+	margin: 0.5em;
+	height: auto;
+}
+.recent-post {
+	margin: .2em 0 .2em 0;
+}
+#sidebar {
+	margin-top: 1.5em;
+	ul li {
+		list-style: none;
+		font-size: 1.35em;
+		line-height: 1.5em;
+		a {
+			color: $color_delta_approx;
+			text-decoration: none;
+			a:visited {
+				color: $color_delta_approx;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.resp-sharing-button__link {
+	display: inline-block;
+	text-decoration: none;
+	color: $white;
+	margin: 0.5em;
+}
+.resp-sharing-button__icon {
+	display: inline-block;
+	stroke: $white;
+	fill: none;
+	svg {
+		width: 1em;
+		height: 1em;
+		margin-right: 0.4em;
+		vertical-align: top;
+	}
+}
+.resp-sharing-button {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 25ms ease-out;
+	padding: 0.5em 0.75em;
+	font-family: $font_8, $font_7, $font_9, $font_1;
+}
+.resp-sharing-button__icon--solid {
+	fill: $white;
+	stroke: none;
+}
+.resp-sharing-button__icon--solidcircle {
+	fill: $white;
+	stroke: none;
+}
+.resp-sharing-button--twitter {
+	background-color: $color_picton_blue_approx;
+	border-color: $color_picton_blue_approx;
+	&:hover {
+		background-color: $color_curious_blue_approx;
+		background-color: $color_curious_blue_approx;
+		border-color: $color_curious_blue_approx;
+	}
+	&:active {
+		background-color: $color_curious_blue_approx;
+		border-color: $color_curious_blue_approx;
+	}
+}
+.resp-sharing-button--pinterest {
+	background-color: $color_monza_approx;
+	border-color: $color_monza_approx;
+	&:hover {
+		background-color: $color_pohutukawa_approx;
+		background-color: $color_pohutukawa_approx;
+		border-color: $color_pohutukawa_approx;
+	}
+	&:active {
+		background-color: $color_pohutukawa_approx;
+		border-color: $color_pohutukawa_approx;
+	}
+}
+.resp-sharing-button--facebook {
+	background-color: $color_azure_approx;
+	border-color: $color_azure_approx;
+	&:hover {
+		background-color: $color_astronaut_approx;
+		background-color: $color_astronaut_approx;
+		border-color: $color_astronaut_approx;
+	}
+	&:active {
+		background-color: $color_astronaut_approx;
+		border-color: $color_astronaut_approx;
+	}
+}
+.resp-sharing-button--tumblr {
+	background-color: $color_pickled_bluewood_approx;
+	border-color: $color_pickled_bluewood_approx;
+	&:hover {
+		background-color: $color_ebony_clay_approx;
+		background-color: $color_ebony_clay_approx;
+		border-color: $color_ebony_clay_approx;
+	}
+	&:active {
+		background-color: $color_ebony_clay_approx;
+		border-color: $color_ebony_clay_approx;
+	}
+}
+.resp-sharing-button--reddit {
+	background-color: $color_danube_approx;
+	&:hover {
+		background-color: $color_steel_blue_approx;
+	}
+}
+.resp-sharing-button--google {
+	background-color: $color_valencia_approx;
+	border-color: $color_valencia_approx;
+	&:hover {
+		background-color: $color_thunderbird_approx;
+		background-color: $color_thunderbird_approx;
+		border-color: $color_thunderbird_approx;
+	}
+	&:active {
+		background-color: $color_thunderbird_approx;
+		border-color: $color_thunderbird_approx;
+	}
+}
+.resp-sharing-button--linkedin {
+	background-color: $color_deep_cerulean_approx;
+	&:hover {
+		background-color: $color_bahama_blue_approx;
+	}
+}
+.resp-sharing-button--email {
+	background-color: $color_tapa_approx;
+	border-color: $color_tapa_approx;
+	&:hover {
+		background-color: $color_chicago_approx;
+		background-color: $color_chicago_approx;
+		border-color: $color_chicago_approx;
+	}
+	&:active {
+		background-color: $color_chicago_approx;
+		border-color: $color_chicago_approx;
+	}
+}
+.resp-sharing-button--xing {
+	background-color: $color_elm_approx;
+	&:hover {
+		background-color: $color_eden_approx;
+	}
+}
+.resp-sharing-button--whatsapp {
+	background-color: $color_malachite_approx;
+	&:hover {
+		background-color: $color_eucalyptus_approx;
+	}
+}
+.resp-sharing-button--hackernews {
+	background-color: $blaze_orange;
+	&:hover {
+		background-color: $color_blaze_orange_approx;
+	}
+	&:focus {
+		background-color: $color_blaze_orange_approx;
+	}
+}
+.resp-sharing-button--vk {
+	background-color: $color_kashmir_blue_approx;
+	&:hover {
+		background-color: $color_bismark_approx;
+	}
+}
+.recent-posts li {
+	font-size: 20px;
+	line-height: 36px;
+}
+.resp-sharing-button--small svg {
+	margin: 0;
+	vertical-align: middle;
+}

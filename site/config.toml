@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://localhost:3000/"
 languageCode = "en-us"
 title = "Strata"
 theme = "hugo-strata-theme"
@@ -15,7 +15,7 @@ paginate = 10
 	description = "Not all who wander are lost..."
 
 	# Format dates with Go's time formatting
-	date_format = "2006-01-02"
+	date_format = "January 1, 2006"
 
 	# Add custom assets with their paths relative to the static folder
 	custom_js   = []
@@ -38,9 +38,8 @@ paginate = 10
 		linkedin = ""
 
 		copyright = [
-			"&copy; John Doe",
-			"Design: [HTML5 UP](//html5up.net)",
-			"Demo Images: [Unsplash](//unsplash.com/)"
+			"&copy; Lost+Found",
+			"Design: [HTML5 UP](//html5up.net)"
 		]
 
 
