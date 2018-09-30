@@ -2509,7 +2509,7 @@
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.8);
 			font-style: italic;
 			font-size: 1.35em;
 			line-height: 1.75em;
@@ -3185,7 +3185,7 @@
 
 	#sidebar ul li a,
 	#sidebar ul li a a:visited {
-		color: #a2a2a2;
+		color: rgba(255, 255, 255, 0.8);
 		text-decoration: none;
 	}
 
