@@ -24,4 +24,20 @@
 		{{ range .Site.Params.custom_css }}
 		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 		{{ end }}
+
+		<!-- Search Engine -->
+		<meta name="description" content="{{ .Description }}">
+		<meta name="image" content="{{ .Params.image }}">
+		<!-- Schema.org for Google -->
+		<meta itemprop="name" content="{{ .Title }}">
+		<meta itemprop="description" content="{{ .Description }}">
+		<meta itemprop="image" content="{{ .Params.image }}">
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="{{.Title }}">
+		<meta name="twitter:description" content="{{ .Description }}">
+		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta name="og:title" content="Page Title">
+		<meta name="og:description" content="{{ .Description }}">
+		<meta name="og:type" content="website">
 	</head>
