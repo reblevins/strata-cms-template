@@ -12,7 +12,7 @@ title = "A Study in Scarlet"
 +++
 This will be a 3-part dive into the subject of sin as seen throughout the Hebrew Bible and the New Testament.
 
-In the beginning seems like as good a place as any to start, so here we go...
+The beginning seems like as good a place as any to start, so here we go...
 
 ### In the Beginning
 
